@@ -1,0 +1,15 @@
+void main() {
+  print("choose an option:\n1. countdown timer \n2. stopwatch");
+  String choice = stdin.readLineSync()!;
+
+  switch (choice) {
+    case '1':
+      timer();
+      break;
+    case '2':
+      stopwatch();
+      break;
+    default:
+      print("invalid choice");
+  }
+}
