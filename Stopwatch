@@ -1,0 +1,12 @@
+void stopwatch() {
+  print("press enter to start the stopwatch.");
+  stdin.readLineSync();
+  
+  int startTym = DateTime.now().millisecondsSinceEpoch;
+  print("stopwatch started. press enter to stop.");
+  stdin.readLineSync();
+  
+  int endTym = DateTime.now().millisecondsSinceEpoch;
+  int elapsedTym = (endTym - startTym) ~/ 1000;
+  print("total elapsed time: $elapsedTym seconds");
+}
